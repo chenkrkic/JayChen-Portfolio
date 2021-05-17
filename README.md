@@ -26,9 +26,9 @@ Applying some media query tools to make the page applicable to different size sc
 
 
 
-No a nice looking one, but I have applied all the skills I knew to it. 
+ # No a nice looking one, but I have applied all the skills I knew to it. 
 
-Please feel free to make a comment/ suggestion, so that I can present something better next time. 
+ # Please feel free to make a comment/ suggestion, so that I can present something better next time. 
 
 
 
