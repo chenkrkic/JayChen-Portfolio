@@ -1,4 +1,3 @@
-![screenshot-127 0 0 1_5500-2021 05 16-23_02_38](https://user-images.githubusercontent.com/30817557/118440943-4e9d8980-b69d-11eb-8cf6-30a39f6973e4.png)
 # JayChen-Portfolio
 
 Welcome to my first developer portfolio
