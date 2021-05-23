@@ -18,10 +18,6 @@ body {
   color: var(--secondary-color);
   background-color: var(--third-color);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 1.6;
-  margin: 0;
 }
 
 header {
@@ -50,16 +46,9 @@ h2,
 h3,
 h4 {
   font-weight: 900;
-  line-height: 1;
+  line-height: 1.5;
   margin: 0;
 }
-
-/* h2,
-h3,
-h4,
-p {
-  margin-bottom: 1em;
-} */
 
 header a {
   text-decoration: none;
@@ -92,20 +81,12 @@ header nav ul li a:hover {
 }
 
 section {
-  /* padding: 10px; */
   padding: 3rem 0;
 }
-/* section h2 {
-  font-size: 50px;
-} */
 
 .container {
   margin-inline: auto;
   width: min(90%, 60rem)
-}
-
-.container-narrow {
-  max-width: 40rem;
 }
 
 .split {
@@ -124,14 +105,15 @@ section {
 .aboutme {
   line-height: 1.7;
   color: var(--tertiary-color);
-  width: 100%;
-  margin: 0 auto;
+  width: 75%;
+  margin-left: 90px;
   font-size: 20px;
   text-align: center;
-  display: block;
+  display: inline-block;
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 
 .aboutme img {
   width: 20%;
@@ -141,10 +123,6 @@ section {
   max-width: 100%;
   display: block;
 }
-/* .aboutme img {
-  width: 200px;
-  border-radius: 30%;
-} */
 
 .aboutme-intro {
   padding: 25px auto 25px auto;
@@ -153,60 +131,50 @@ section {
   flex: 12;
 }
 
-.projects {
-  margin: 0 auto;
-  padding-bottom: 50px;
+.project {
+  margin: 20px;
+  flex: 1;
+}
+
+.bg-project {
+  line-height: 1.5;
+  color: var(--tertiary-color);
   width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
- 
 }
 
-/* .bg-project1{
-  background-color: var(--primary-color);
-}
-
-.bg-project3 {
-  background-color: var(--primary-color);
-} */
-
-.project1-content,
-.project2-content,
-.project3-content {
-padding: 25px;
-line-height: 1.5;
-font-size: 20px;
-font-weight: bold;
-flex: initial;
-display: inline-block;
-}
-
-/* .project {
-  margin: 20px;
-  flex: 1;
-} */
-
-/* .projects h3 {
-  padding: 20px;
-  font-size: 20px;
+.bg-project h3 p {
+  padding: 25px;
+  line-height: 1.5;
   flex: 12;
-  float: initial;
-} */
+}
+
+.bg-project h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.bg-project p {
+  font-weight: lighter;
+  font-size: 20px;
+}
 
 .project1 img {
-  border-radius: 30%;
-  width: 60%;
-  height: 80%;
-  padding: 20px 80px;
+  width: 70%;
+  padding: 20px 50px;
+  border-radius: 20%;
   max-width: 80%;
   display: block;
 }
 
 .project2 img {
-  border-radius: 10%;
-  width: 55%;
-  height: 65%;
+  width: 60%;
+  height: 70%;
   padding: 20px 50px;
   max-width: 80%;
   display: block;
@@ -214,45 +182,26 @@ display: inline-block;
 
 .project3 img {
   border-radius: 20%;
-  width: 50%;
-  height: 60%;
+  width: 60%;
+  height: 80%;
   padding: 20px 50px;
   max-width: 80%;
   display: block;
 }
 
-.project1,
-.project2,
-.project3 {
-  font-size: 20px;
-  padding: 25px;
-  overflow: auto;
-}
-
-.project1 p,
-.project2 p,
-.project3 P {
-  font-size: 20px;
-  padding: 20px ;
-}
-
 .project1 img:hover {
-  width: 61%;
-  height: 81%;
+  width: 71%;
   border: none;
   background: none;
   color: var(--secondary-color);
   text-align: center;
-  padding: 20px 90px;
-  font-size: 16px;
+  padding: 20px 50px;
   max-width: 100%;
   display: block;
 }
 
 .project2 img:hover {
-  width: 55%;
-  height: 65%;
-  border-radius: 20%;
+  width: 61%;
   border: none;
   background: none;
   color: var(--secondary-color);
@@ -263,14 +212,12 @@ display: inline-block;
 }
 
 .project3 img:hover {
-  width: 51%;
-  height: 61%;
-  border-radius: 20%;
+  width: 61%;
   border: none;
   background: none;
   color: var(--secondary-color);
   text-align: center;
-  padding: 20px 50px;
+  padding: 20px auto;
   max-width: 80%;
   display: block;
 }
@@ -304,6 +251,7 @@ display: inline-block;
 
 .resume nav ul li {
   font-size: 20px;
+  text-align: center;
 }
 
 .contact-info {
@@ -443,8 +391,9 @@ footer h4 {
     .project1 img,
     .project2 img
     .project3 img {
-      width: 100%;
-      margin: 0;
+      width: 90%;
+      margin: 10px;
+      display: inline-flex;
     }
 
     .split {
