@@ -2,7 +2,7 @@
   --primary-color: #6691c9;
   --secondary-color: #eee6bc;
   --third-color: #aac4dd;
-  --fourth-color: #ebe293;
+  --fourth-color: #5168ed;
   --fifth-color: #8894d4;
 }
 
@@ -135,9 +135,26 @@ section {
   flex: 1;
 }
 
-.bg-project {
+.bg-project1,
+.bg-project3 {
   line-height: 1.5;
   color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  border: 1px inset var(--fourth-color);
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bg-project2 {
+  line-height: 1.5;
+  color: var(--tertiary-color);
+  background-color: none;
+  border: 1px inset var(--fourth-color);
   width: 100%;
   margin: 0 auto;
   font-size: 20px;
