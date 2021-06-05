@@ -105,8 +105,9 @@ section {
 .aboutme {
   line-height: 1.7;
   color: var(--tertiary-color);
-  width: 75%;
-  margin-left: 90px;
+  background-image: url(IMG_2912.JPG);
+  background-repeat: repeat;
+  width: 100%;
   font-size: 20px;
   text-align: center;
   display: inline-block;
