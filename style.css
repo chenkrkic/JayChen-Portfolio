@@ -2,7 +2,7 @@
   --primary-color: #6691c9;
   --secondary-color: #eee6bc;
   --third-color: #aac4dd;
-  --fourth-color: #ebe293;
+  --fourth-color: #5168ed;
   --fifth-color: #8894d4;
 }
 
@@ -86,7 +86,7 @@ section {
 
 .container {
   margin-inline: auto;
-  width: min(90%, 60rem)
+  width: min(90%, 60rem);
 }
 
 .split {
@@ -105,8 +105,9 @@ section {
 .aboutme {
   line-height: 1.7;
   color: var(--tertiary-color);
-  width: 75%;
-  margin-left: 90px;
+  background-image: url(IMG_2912.JPG);
+  background-repeat: repeat;
+  width: 100%;
   font-size: 20px;
   text-align: center;
   display: inline-block;
@@ -114,10 +115,9 @@ section {
   justify-content: space-around;
 }
 
-
 .aboutme img {
   width: 20%;
-  height: 10%; 
+  height: 10%;
   margin: 20px 50px;
   border-radius: 10%;
   max-width: 100%;
@@ -136,9 +136,26 @@ section {
   flex: 1;
 }
 
-.bg-project {
+.bg-project1,
+.bg-project3 {
   line-height: 1.5;
   color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  border: 1px inset var(--fourth-color);
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bg-project2 {
+  line-height: 1.5;
+  color: var(--tertiary-color);
+  background-color: none;
+  border: 1px inset var(--fourth-color);
   width: 100%;
   margin: 0 auto;
   font-size: 20px;
@@ -165,59 +182,44 @@ section {
 }
 
 .project1 img {
-  width: 70%;
-  padding: 20px 50px;
   border-radius: 20%;
   max-width: 80%;
   display: block;
 }
 
 .project2 img {
-  width: 60%;
-  height: 70%;
-  padding: 20px 50px;
   max-width: 80%;
   display: block;
 }
 
 .project3 img {
   border-radius: 20%;
-  width: 60%;
-  height: 80%;
-  padding: 20px 50px;
   max-width: 80%;
   display: block;
 }
 
 .project1 img:hover {
-  width: 71%;
-  border: none;
+  border-radius: 20%;
+  border: 1px solid var(--secondary-color);
   background: none;
-  color: var(--secondary-color);
   text-align: center;
-  padding: 20px 50px;
-  max-width: 100%;
+  max-width: 80%;
   display: block;
 }
 
 .project2 img:hover {
-  width: 61%;
-  border: none;
+  border-radius: 20%;
+  border: 1px solid var(--secondary-color);
   background: none;
-  color: var(--secondary-color);
   text-align: center;
-  padding: 20px 50px;
   max-width: 80%;
   display: block;
 }
 
 .project3 img:hover {
-  width: 61%;
-  border: none;
+  border: 1px solid var(--secondary-color);
   background: none;
-  color: var(--secondary-color);
   text-align: center;
-  padding: 20px auto;
   max-width: 80%;
   display: block;
 }
@@ -349,8 +351,7 @@ footer h4 {
 
     .aboutme img,
     .project1 img,
-    .project2 img
-    .project3 img {
+    .project2 img .project3 img {
       width: 100%;
       flex: 0 32%;
       flex-direction: column;
@@ -372,11 +373,11 @@ footer h4 {
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-    header, 
+    header,
     section {
       padding: 4rem 0;
     }
-    
+
     .section-title {
       width: 95%;
     }
@@ -385,12 +386,10 @@ footer h4 {
     .project2 p,
     .project3 p {
       width: 100%;
-  
     }
     .aboutme img,
     .project1 img,
-    .project2 img
-    .project3 img {
+    .project2 img .project3 img {
       width: 90%;
       margin: 10px;
       display: inline-flex;
@@ -404,7 +403,7 @@ footer h4 {
       flex-basis: 100%;
     }
 
-    .split > * + *{
+    .split > * + * {
       margin-left: 2em;
     }
 
